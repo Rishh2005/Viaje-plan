@@ -1,0 +1,46 @@
+.budget-summary {.budget-summary {
+    margin-bottom: 1rem;
+}
+
+.budget-summary p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.expenses h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+#expense-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#expense-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.add-expense {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.add-expense input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+}
+
+#add-expense-btn {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+

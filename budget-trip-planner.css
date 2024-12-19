@@ -1,0 +1,49 @@
+#budget-trip-planner {
+    background-color: var(--accent);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+}
+
+.plan-trip-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 0px 0px rgba(251, 146, 60, 0.7);
+}
+
+.plan-trip-btn:hover {
+    background-color: #c2410c;
+}
+
+.trip-plan {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    white-space: pre-wrap;
+}
+

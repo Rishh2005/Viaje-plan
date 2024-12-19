@@ -1,0 +1,31 @@
+.tabs {
+    display: flex;
+    background-color: var(--secondary);
+    border-radius: 15px 15px 0 0;
+    border: 2px solid var(--border);
+    overflow: hidden;
+}
+
+.tab {
+    flex: 1;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tab.active {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+

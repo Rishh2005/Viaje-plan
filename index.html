@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBO Viaje-Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/budget-trip-planner.css">
+    <link rel="stylesheet" href="styles/itinerary-planner.css">
+    <link rel="stylesheet" href="styles/destination-insights.css">
+    <link rel="stylesheet" href="styles/budget-tracker.css">
+    <link rel="stylesheet" href="styles/collaboration.css">
+    <link rel="stylesheet" href="styles/booking.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="main-title">TBO Viaje-Plan</h1>
+        <div class="grid">
+            <div class="col-span-2">
+                <div id="dashboard">
+                    <div class="tabs">
+                        <button class="tab active" data-tab="planner">Itinerary Planner</button>
+                        <button class="tab" data-tab="insights">Destination Insights</button>
+                        <button class="tab" data-tab="budget">Budget Tracker</button>
+                        <button class="tab" data-tab="collaboration">Collaboration</button>
+                        <button class="tab" data-tab="booking">Booking</button>
+                    </div>
+                    <div class="tab-content active" id="planner">
+                        <div class="card">
+                            <h2 class="card-title">Itinerary for Paris</h2>
+                            <ul id="activities-list" class="activities-list">
+                                <li class="activity">Visit Eiffel Tower</li>
+                                <li class="activity">Explore Louvre Museum</li>
+                                <li class="activity">Cruise on Seine River</li>
+                                <li class="activity">Walk around Montmartre</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="insights">
+                        <div class="card">
+                            <h2 class="card-title">Insights for Paris</h2>
+                            <div class="destination-image"></div>
+                            <h3>Must-visit attractions:</h3>
+                            <ul>
+                                <li>Eiffel Tower</li>
+                                <li>Louvre Museum</li>
+                                <li>Notre-Dame Cathedral</li>
+                                <li>Arc de Triomphe</li>
+                            </ul>
+                            <h3>Local customs:</h3>
+                            <p>Greet people with "Bonjour" (hello) and "Merci" (thank you). It's polite to learn a few basic French phrases.</p>
+                            <h3>Transportation options:</h3>
+                            <p>Paris has an extensive public transportation system including the Metro, RER trains, and buses. Consider purchasing a Navigo pass for unlimited travel.</p>
+                            <h3>Dining recommendations:</h3>
+                            <ul>
+                                <li>Le Chateaubriand - Modern French cuisine</li>
+                                <li>L'Ami Louis - Classic French bistro</li>
+                                <li>Clown Bar - Innovative small plates</li>
+                                <li>Le Baratin - Rustic French cooking</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="budget">
+                        <div class="card">
+                            <h2 class="card-title">Budget Tracker</h2>
+                            <div class="budget-summary">
+                                <p>Total Budget: $<span id="total-budget">5000</span></p>
+                                <p>Remaining: $<span id="remaining-budget">1700</span></p>
+                            </div>
+                            <div class="expenses">
+                                <h3>Expenses:</h3>
+                                <ul id="expense-list">
+                                    <li><span>Flights</span><span>$1200</span></li>
+                                    <li><span>Hotel</span><span>$1500</span></li>
+                                    <li><span>Food</span><span>$600</span></li>
+                                </ul>
+                            </div>
+                            <div class="add-expense">
+                                <input type="text" id="expense-name" placeholder="Expense name">
+                                <input type="number" id="expense-amount" placeholder="Amount">
+                                <button id="add-expense-btn">Add Expense</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="collaboration">
+                        <div class="card">
+                            <h2 class="card-title">Collaboration</h2>
+                            <div class="collaborators-grid">
+                                <div class="collaborator">
+                                    <div class="avatar">AJ</div>
+                                    <div class="collaborator-info">
+                                        <p class="collaborator-name">Alice Johnson</p>
+                                        <p class="collaborator-role">Trip Organizer</p>
+                                    </div>
+                                </div>
+                                <div class="collaborator">
+                                    <div class="avatar">BS</div>
+                                    <div class="collaborator-info">
+                                        <p class="collaborator-name">Bob Smith</p>
+                                        <p class="collaborator-role">Budget Manager</p>
+                                    </div>
+                                </div>
+                                <div class="collaborator">
+                                    <div class="avatar">CW</div>
+                                    <div class="collaborator-info">
+                                        <p class="collaborator-name">Carol Williams</p>
+                                        <p class="collaborator-role">Itinerary Planner</p>
+                                    </div>
+                                </div>
+                                <div class="collaborator">
+                                    <div class="avatar">DB</div>
+                                    <div class="collaborator-info">
+                                        <p class="collaborator-name">David Brown</p>
+                                        <p class="collaborator-role">Local Expert</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="booking">
+                        <div class="card">
+                            <h2 class="card-title">Integrated Booking</h2>
+                            <div class="booking-options">
+                                <div class="booking-option">
+                                    <h3>Flight Booking</h3>
+                                    <p>Search and book flights for your trip.</p>
+                                    <button class="booking-btn">
+                                        <span class="icon">✈️</span>
+                                        Book Flights
+                                    </button>
+                                </div>
+                                <div class="booking-option">
+                                    <h3>Train Booking</h3>
+                                    <p>Find and book train tickets for your journey.</p>
+                                    <button class="booking-btn">
+                                        <span class="icon">🚂</span>
+                                        Book Trains
+                                    </button>
+                                </div>
+                                <div class="booking-option">
+                                    <h3>Hotel Booking</h3>
+                                    <p>Find and book accommodations for your stay.</p>
+                                    <button class="booking-btn">
+                                        <span class="icon">🏨</span>
+                                        Book Hotels
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1">
+                <div class="card" id="budget-trip-planner">
+                    <h2 class="card-title">Budget Trip Planner</h2>
+                    <div class="form-group">
+                        <label for="budget">Budget (USD)</label>
+                        <input type="number" id="budget" name="budget">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" name="destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duration (days)</label>
+                        <select id="duration" name="duration">
+                            <option value="">Select duration</option>
+                            <option value="3">3 days</option>
+                            <option value="5">5 days</option>
+                            <option value="7">7 days</option>
+                            <option value="10">10 days</option>
+                        </select>
+                    </div>
+                    <button id="plan-trip-btn" class="plan-trip-btn">Plan My Trip</button>
+                    <div id="trip-plan" class="trip-plan"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

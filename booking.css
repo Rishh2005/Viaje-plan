@@ -1,0 +1,41 @@
+.booking-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.booking-option {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0px 0px rgba(251, 146, 60, 0.7);
+}
+
+.booking-option h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.booking-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.booking-btn:hover {
+    background-color: #c2410c;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+

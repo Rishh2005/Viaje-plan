@@ -1,0 +1,78 @@
+:root {
+    --background: #fff;
+    --foreground: #0c0a09;
+    --card: #fff;
+    --card-foreground: #0c0a09;
+    --popover: #fff;
+    --popover-foreground: #0c0a09;
+    --primary: #ea580c;
+    --primary-foreground: #fafaf9;
+    --secondary: #fed7aa;
+    --secondary-foreground: #1c1917;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --accent: #ffe4e6;
+    --accent-foreground: #1c1917;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafaf9;
+    --border: #fdba74;
+    --input: #fdba74;
+    --ring: #ea580c;
+    --radius: 0.5rem;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    background-color: #fff7ed;
+    color: var(--foreground);
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--card);
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px 0px rgba(251, 146, 60, 0.7);
+    border: 2px solid var(--border);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+button {
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
