@@ -28,4 +28,4 @@ Future Updates:
 Completion of country and destination data processing.
 Further integration with additional travel APIs for better services.
 UI/UX improvements based on user feedback.
-Added features for trip collaboration and sharing
+Added features for trip collaboration and sharing.
