@@ -3,7 +3,6 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
-
 .booking-option {
     background-color: white;
     padding: 1rem;
