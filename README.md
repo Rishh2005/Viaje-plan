@@ -3,7 +3,7 @@ Viaje-plan is a travel planning application designed to help users create person
 
 This app aims to provide a seamless, interactive experience for travelers, making it easier to plan trips, book transportation, and discover new places all in one platform. Whether you’re looking for budget-friendly travel options or seeking detailed travel guides, Viaje-plan is your travel companion.
 
-Features:
+## Features
 Budget-based trip planning: Plan trips based on your available budget.
 Ticket booking: Easily book tickets for your journey.
 Country and destination information: Explore countries and famous places (data is still processing).
