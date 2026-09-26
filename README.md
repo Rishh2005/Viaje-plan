@@ -6,11 +6,12 @@ This app aims to provide a seamless, interactive experience for travelers, makin
 ## Features
 Budget-based trip planning: Plan trips based on your available budget.
 Ticket booking: Easily book tickets for your journey.
-Country and destination information: Explore countries and famous places (data is still processing).
-Travel guide feature: Get a virtual guide for the places you're visiting (data is still processing).
+Country and destination information: Explore countries and famous places (data is still being processed).
+Travel guide feature: Get a virtual guide for the places you're visiting (data is still being processed).
 Technologies Used:
 API Keys: For integrating travel data and booking services.
 Figma: For designing the user interface and experience.
+
 Installation Instructions:
 Download the ZIP file of the project.
 Extract the ZIP to your desired location on your machine.
@@ -18,12 +19,14 @@ Open Visual Studio (VS Studio) and navigate to the folder where you extracted th
 Open the main file or app file in Visual Studio.
 Ensure that the API keys are set up correctly in the files (check API documentation).
 Run the app by pressing F5 or using the "Run" button.
+
 How to Use:
 Launch the app from VS Studio.
 Enter your budget to start planning your trip.
 Browse destinations and famous places (please note that data is still being processed).
 Book tickets for your trip.
-Use the guide feature to get information about your destinations (currently in processing).
+Use the guide feature to get information about your destinations (currently being processed).
+
 Future Updates:
 Completion of country and destination data processing.
 Further integration with additional travel APIs for better services.
